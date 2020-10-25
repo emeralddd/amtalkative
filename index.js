@@ -1,5 +1,5 @@
 const Discord = require("discord.js");	
-const config = require("./tockan.json");
+//const config = require("./tockan.json");
 
 var bot = new Discord.Client();	
 
@@ -80,4 +80,5 @@ bot.on('message', message =>
 		}
 	}		
 })	
-bot.login(config.token);
+//bot.login(config.token);
+bot.login(process.env.BOT_TAKEN);
